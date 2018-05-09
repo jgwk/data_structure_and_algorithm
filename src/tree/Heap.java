@@ -1,6 +1,20 @@
 package tree;
 
 public class Heap {
+	public static void main(String[] args) {
+		insert(3);
+		insert(1);
+		insert(2);
+		insert(5);
+		insert(9);
+		insert(7);
+		
+		print();
+		
+		delete();
+		print();
+	}
+	
 	static int[] heap = new int[16];
 	static int size = 0;
 	
@@ -52,20 +66,6 @@ public class Heap {
 			System.out.print(heap[i] + " ");
 		}
 		System.out.println();
-	}
-	
-	public static void main(String[] args) {
-		insert(3);
-		insert(1);
-		insert(2);
-		insert(5);
-		insert(9);
-		insert(7);
-		
-		print();
-		
-		delete();
-		print();
 	}
 }
 

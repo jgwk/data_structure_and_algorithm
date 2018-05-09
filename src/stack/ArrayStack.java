@@ -1,6 +1,17 @@
 package stack;
 
 public class ArrayStack implements Stack {
+	public static void main(String[] args) {
+		Stack s = new ArrayStack();
+		s.push('a');
+		s.push('b');
+		s.push('c');
+		s.push('d');
+		System.out.println(s.pop());
+		System.out.println(s.pop());
+		System.out.println(s.pop());
+		System.out.println(s.pop());
+	}
 	
 	private int top;
 	private char[] items;
